@@ -14,7 +14,7 @@ With DDX Bricks, business users, citizen developers, and full stack developers c
 * Permission to create an app from the Appstore
 * Understanding of how to work with domo datasets (for example how to build a card from a dataset)
 * Basic understanding of HTML, CSS and JS are useful to fully customize DDX Bricks
-### Descriptions
+### Example Bricks
 * Call External Public API: this brick demonstrates how you can utilize external public APIs in your instance to enrich dashboards (brick uses USGS Earthquake API).
 
 * Texting Utility: this brick leverages the Twilio API to send text messages. User inputs phone number and text body and then clicks send.
