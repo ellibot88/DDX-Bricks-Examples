@@ -19,11 +19,7 @@ welcome.insertAdjacentText('beforeend', ', welcome to Domo!')
 
 
 //Step 2. Query your dataset(s): https://developer.domo.com/docs/dev-studio-references/data-api
-var fields = ['Object_Name', 'Object_ID'];
-var groupby = ['Object_Name', 'Object_ID'];
-var filter = ['Department = Customer Success Operations']
-var alias = ['count=User_ID']
-var query = `/data/v1/${datasets[0]}?alias=${alias.join()}&fields=${fields.join()}&groupby=${groupby.join()}&filter=${filter.join()}&limit=5`;
+
 domo.post(`/sql/v1/${datasets[0]}`, `SELECT Object_Name, Object_ID, count(User_ID) FROM ${datasets[0]} where Department = (select Department from ${datasets[0]} where User_ID = ${domo.env.userId}) GROUP BY Object_Name, Object_ID order by count(User_ID) desc limit 5`, {contentType: 'text/plain'}).then(handleResult);
 
 
