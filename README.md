@@ -24,3 +24,10 @@ With DDX Bricks, business users, citizen developers, and full stack developers c
 * HTML Example: this brick demonstrates how you can simply use HTML to create a utility to enrich your dashboard.
 
 ### Setup
+1. Search for 'DDX Blank' in Domo AppStore. Install app and edit card
+
+2. Copy index.js into 'JavaScript' tab, index.css into 'CSS' tab, and index.html into 'HTML' tab
+
+3. Follow README instructions for the brick you are installing
+
+4. Click the 'Run' button to test app
