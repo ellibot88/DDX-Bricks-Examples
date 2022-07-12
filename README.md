@@ -4,6 +4,16 @@
 
 # Domo DDX Bricks - Example Apps
 
+### About
+DDX Bricks are pre-built objects that allow you to create advanced visualizations and apps and can be customized by simply copying and pasting code.
+
+With DDX Bricks, business users, citizen developers, and full stack developers can quickly iterate, prototype and compose new apps with beautiful and advanced features. You can choose from Bricks available in the Domo Appstore. You can also use DDX Bricks to render a new library you found online — it’s as easy as copy and paste.
+
+### Prerequisites
+* A Domo account
+* Permission to create an app from the Appstore
+* Understanding of how to work with domo datasets (for example how to build a card from a dataset)
+* Basic understanding of HTML, CSS and JS are useful to fully customize DDX Bricks
 ### Descriptions
 * Call External Public API: this brick demonstrates how you can utilize external public APIs in your instance to enrich dashboards (brick uses USGS Earthquake API).
 
