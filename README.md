@@ -28,6 +28,6 @@ With DDX Bricks, business users, citizen developers, and full stack developers c
 
 2. Copy index.js into 'JavaScript' tab, index.css into 'CSS' tab, and index.html into 'HTML' tab
 
-3. Follow README instructions for the brick you are installing
+3. Follow README instructions for the brick you are installing (found in the folder for the brick)
 
 4. Click the 'Run' button to test app
