@@ -5,6 +5,8 @@
 var domo = window.domo;
 var datasets = window.datasets;
 var test = document.getElementById("myDiv");
+var list = document.getElementById("list");
+
 
 //Step 1. Select your dataset(s) from the button in the bottom left corner
 
@@ -17,7 +19,16 @@ var config = {
 
 axios(config)
 .then(function (response) {
-  test.innerHTML = JSON.stringify(response.data)
+  //test.innerHTML = JSON.stringify(response.data)
+  let domo = response.data.features
+  console.log(domo)
+  for(let i = 0; i<domo.length; i++){
+    
+    const item = document.createElement("li");
+    item.innerText = `${domo[i].properties.place}: ${domo[i].properties.mag} magnitude`
+    list.appendChild(item)
+    
+  }
 })
 .catch(function (error) {
   console.log(error);
