@@ -11,4 +11,6 @@
 
 * Welcome to Domo: this brick leverages the domo.env global variable to determine user and then display top n dashboards according to user's department.
 
+* HTML Example: this brick demonstrates how you can simply use HTML to create a utility to enrich your dashboard.
+
 ### Setup
